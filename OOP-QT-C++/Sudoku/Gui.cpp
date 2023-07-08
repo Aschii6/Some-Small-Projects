@@ -19,7 +19,7 @@ void Gui::addComponents() {
 //    for (int i = 0; i < 9; ++i) {
 //        buttonBoard[i].resize(9);
 //        for (int j = 0; j < 9; ++j) {
-//            auto* btn = new QPushButton("ඞ");
+//            auto* btn = new QPushButton("");
 //            btn->setFixedSize(60, 60);
 //            btn->setStyleSheet("background-color: white");
 //            btn->setFont(QFont("Times", 20, QFont::Bold));
@@ -41,7 +41,7 @@ void Gui::addComponents() {
     for (int i = 0; i < 9; ++i) {
         buttonBoard[i].resize(9);
         for (int j = 0; j < 9; ++j) {
-            auto* btn = new QPushButton("ඞ");
+            auto* btn = new QPushButton("");
             btn->setFixedSize(60, 60);
             btn->setStyleSheet("background-color: white");
             btn->setFont(QFont("Times", 20, QFont::Bold));
@@ -109,7 +109,7 @@ void Gui::connectSignals() {
         for (int j = 0; j < 9; ++j) {
             auto btn = buttonBoard[i][j];
             QObject::connect(btn, &QPushButton::clicked, [this, btn, i, j](){
-                if (btn->text() != "ඞ")
+                if (btn->text() != "")
                     return;
                 if (selectedNumber == 0)
                     return;
