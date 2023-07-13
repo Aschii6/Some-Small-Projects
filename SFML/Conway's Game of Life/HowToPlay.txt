@@ -1,0 +1,4 @@
+Hold left click to add cells
+Hold rich click to remove cells
+Space to start / stop the cell evolution
+Press backspace when the evolution is stopped to kill all cells
