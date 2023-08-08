@@ -1,0 +1,100 @@
+﻿  Game.cpp
+D:\VsProjects\ECS Geometry Shooter\Components.h(20,15): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+D:\VsProjects\ECS Geometry Shooter\Game.cpp(83,42): warning C4305: '*=': truncation from 'double' to 'T'
+          with
+          [
+              T=float
+          ]
+D:\VsProjects\ECS Geometry Shooter\Game.cpp(84,42): warning C4305: '*=': truncation from 'double' to 'T'
+          with
+          [
+              T=float
+          ]
+D:\VsProjects\ECS Geometry Shooter\Game.cpp(174,17): warning C4267: '+=': conversion from 'size_t' to 'int', possible loss of data
+D:\VsProjects\ECS Geometry Shooter\Game.cpp(184,86): warning C4244: 'argument': conversion from 'T' to 'T', possible loss of data
+          with
+          [
+              T=unsigned int
+          ]
+          and
+          [
+              T=float
+          ]
+D:\VsProjects\ECS Geometry Shooter\Game.cpp(184,62): warning C4244: 'argument': conversion from 'T' to 'T', possible loss of data
+          with
+          [
+              T=unsigned int
+          ]
+          and
+          [
+              T=float
+          ]
+D:\VsProjects\ECS Geometry Shooter\Game.cpp(304,103): warning C4244: 'argument': conversion from 'T' to 'T', possible loss of data
+          with
+          [
+              T=unsigned int
+          ]
+          and
+          [
+              T=float
+          ]
+D:\VsProjects\ECS Geometry Shooter\Game.cpp(304,79): warning C4244: 'argument': conversion from 'T' to 'T', possible loss of data
+          with
+          [
+              T=unsigned int
+          ]
+          and
+          [
+              T=float
+          ]
+D:\VsProjects\ECS Geometry Shooter\Game.cpp(325,9): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+D:\VsProjects\ECS Geometry Shooter\Game.cpp(326,9): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+D:\VsProjects\ECS Geometry Shooter\Game.cpp(331,63): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+D:\VsProjects\ECS Geometry Shooter\Game.cpp(331,60): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+D:\VsProjects\ECS Geometry Shooter\Game.cpp(331,84): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+D:\VsProjects\ECS Geometry Shooter\Game.cpp(331,80): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+D:\VsProjects\ECS Geometry Shooter\Game.cpp(346,112): warning C4244: 'argument': conversion from 'double' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+D:\VsProjects\ECS Geometry Shooter\Game.cpp(346,43): warning C4244: 'argument': conversion from 'double' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+D:\VS\VS2022\VC\Tools\MSVC\14.36.32532\include\xutility(265,77): warning C4244: 'argument': conversion from '_Ty' to 'float', possible loss of data
+          with
+          [
+              _Ty=int
+          ]
+D:\VS\VS2022\VC\Tools\MSVC\14.36.32532\include\memory(2092,13): message : see reference to function template instantiation 'void std::_Construct_in_place<_Ty,sf::Vector2<float>,sf::Vector2<float>,int>(_Ty &,sf::Vector2<float> &&,sf::Vector2<float> &&,int &&) noexcept(false)' being compiled
+          with
+          [
+              _Ty=CTransform
+          ]
+D:\VS\VS2022\VC\Tools\MSVC\14.36.32532\include\memory(2765,46): message : see reference to function template instantiation 'std::_Ref_count_obj2<CTransform>::_Ref_count_obj2<_Ty,_Ty,int>(_Ty &&,_Ty &&,int &&)' being compiled
+          with
+          [
+              _Ty=sf::Vector2f
+          ]
+D:\VsProjects\ECS Geometry Shooter\Game.cpp(304,23): message : see reference to function template instantiation 'std::shared_ptr<CTransform> std::make_shared<CTransform,sf::Vector2f,sf::Vector2f,int>(sf::Vector2f &&,sf::Vector2f &&,int &&)' being compiled
+D:\VS\VS2022\VC\Tools\MSVC\14.36.32532\include\xutility(265,77): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+D:\VS\VS2022\VC\Tools\MSVC\14.36.32532\include\xutility(265,77): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+  ECS Geometry Shooter.vcxproj -> D:\VsProjects\ECS Geometry Shooter\x64\Debug\ECS Geometry Shooter.exe
