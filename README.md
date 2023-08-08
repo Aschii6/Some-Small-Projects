@@ -28,6 +28,3 @@ Game that almost looks like a game and almost is a game
 
 8/8/2023
 Geometry wars ish game / Geometry shooter. Made using ECS (Entities Components Systems) tehniques
-
-![image](https://github.com/Aschii6/Some-Small-Projects/assets/120491549/70934b9e-8910-419b-819e-9d85cf7c9662)
-![image](https://github.com/Aschii6/Some-Small-Projects/assets/120491549/57db8a8f-0c23-40b4-9aa3-8b85b09315b3)
