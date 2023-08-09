@@ -1,0 +1,7 @@
+// Screen capture
+sf::Texture texture;
+texture.create(window.getSize().x, window.getSize().y);
+texture.update(window);
+
+sf::Image screenshot = texture.copyToImage();
+screenshot.saveToFile("screenshot.png");
