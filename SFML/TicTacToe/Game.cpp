@@ -74,7 +74,7 @@ void Game::render() {
     window.draw(player1Text);
     window.draw(player2Text);
 
-    if (checkWin()) {
+    if (checkWin() || boardFull()) {
         window.draw(playAgainRect);
         window.draw(playAgainText);
 
@@ -129,7 +129,7 @@ void Game::handleMouseMoved(sf::Vector2i mousePos) {
 void Game::handleMouseClicked(sf::Vector2i mousePos) {
     sf::Vector2f mousePosFloat = sf::Vector2f(static_cast<float> (mousePos.x), static_cast<float> (mousePos.y));
 
-    if (checkWin()) {
+    if (checkWin() || boardFull()) {
         if (playAgainRect.getGlobalBounds().contains(mousePosFloat)) {
             startNewGame();
         }
@@ -185,6 +185,13 @@ void Game::handleEvents() {
 
 bool Game::checkWin() {
     return getOutsideWinningSquares() != std::pair<int, int>(-1, -1);
+}
+
+bool Game::boardFull() {
+    for (const auto& b : board)
+        if (b == 0)
+            return false;
+    return true;
 }
 
 void Game::init() {
@@ -266,4 +273,3 @@ void Game::run() {
     while (window.isOpen())
         update();
 }
-
