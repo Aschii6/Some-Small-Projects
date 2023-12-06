@@ -37,6 +37,8 @@ class Game {
 
     bool checkWin();
 
+    bool boardFull();
+
     std::pair<int, int> getOutsideWinningSquares();
 
     void startNewGame();
