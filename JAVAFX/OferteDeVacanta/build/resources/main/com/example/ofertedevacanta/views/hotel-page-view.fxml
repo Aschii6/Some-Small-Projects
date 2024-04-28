@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.ofertedevacanta.controllers.HotelPageController">
+   <children>
+      <DatePicker fx:id="startDatePicker" layoutX="13.0" layoutY="360.0" />
+      <DatePicker fx:id="endDatePicker" layoutX="221.0" layoutY="360.0" />
+      <Label layoutX="74.0" layoutY="331.0" text="Start Date" />
+      <Label layoutX="284.0" layoutY="331.0" text="End Date" />
+      <TableView fx:id="offersTableView" layoutX="13.0" layoutY="47.0" prefHeight="200.0" prefWidth="200.0">
+        <columns>
+          <TableColumn fx:id="startDateColumn" prefWidth="100.0" text="Start Date" />
+          <TableColumn fx:id="endDateColumn" prefWidth="100.0" text="End Date" />
+        </columns>
+      </TableView>
+      <Button layoutX="472.0" layoutY="360.0" mnemonicParsing="false" onAction="#handleReservation" text="Rezerva" />
+      <Label layoutX="413.0" layoutY="312.0" prefHeight="38.0" prefWidth="175.0" text="Fa o rezervare pe intervalul asta orar, indiferent de oferte" wrapText="true" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.ofertedevacanta.controllers.ClientPageController">
+   <children>
+      <TableView fx:id="hotelsTableView" layoutX="14.0" layoutY="53.0" prefHeight="200.0" prefWidth="320.0">
+        <columns>
+          <TableColumn fx:id="hotelNameColumn" prefWidth="65.0" text="Name" />
+          <TableColumn fx:id="noOfRoomsColumn" prefWidth="85.0" text="No of Rooms" />
+          <TableColumn fx:id="pricePerNightColumn" prefWidth="95.0" text="Price per Night" />
+          <TableColumn fx:id="typeColumn" prefWidth="75.0" text="Type" />
+        </columns>
+      </TableView>
+      <Label layoutX="157.0" layoutY="14.0" text="Hotels" />
+      <ComboBox fx:id="locationCB" layoutX="99.0" layoutY="273.0" prefWidth="150.0" promptText="Location" />
+      <TableView fx:id="offersTableView" layoutX="366.0" layoutY="53.0" prefHeight="200.0" prefWidth="320.0">
+        <columns>
+          <TableColumn fx:id="hotelNameColumn2" prefWidth="70.0" text="Hotel" />
+          <TableColumn fx:id="locationColumn2" prefWidth="70.0" text="Location" />
+          <TableColumn fx:id="startDateColumn2" prefWidth="90.0" text="Start Date" />
+          <TableColumn fx:id="endDateColumn2" prefWidth="90.0" text="End Date" />
+        </columns>
+      </TableView>
+      <Label layoutX="465.0" layoutY="14.0" text="Personal Special Offers" />
+   </children>
+</AnchorPane>

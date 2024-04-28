@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.trenuri.controllers.ClientPageController">
+   <children>
+      <ComboBox fx:id="departureCityCB" layoutX="14.0" layoutY="54.0" prefWidth="150.0" />
+      <ComboBox fx:id="destinationCityCB" layoutX="198.0" layoutY="54.0" prefWidth="150.0" />
+      <Button layoutX="144.0" layoutY="112.0" mnemonicParsing="false" onAction="#handleSearch" text="Search Route" />
+      <Button layoutX="457.0" layoutY="112.0" mnemonicParsing="false" onAction="#handleBuy" text="Buy Ticket" />
+      <ComboBox fx:id="trainIdCB" layoutX="417.0" layoutY="54.0" prefWidth="150.0" />
+      <DatePicker fx:id="datePicker" layoutX="610.0" layoutY="54.0" />
+      <Label layoutX="50.0" layoutY="25.0" text="Departure City" />
+      <Label layoutX="231.0" layoutY="25.0" text="Destination City" />
+      <Label layoutX="472.0" layoutY="25.0" text="Train Id" />
+      <Label layoutX="684.0" layoutY="25.0" text="Date" />
+      <ListView fx:id="routesListView" layoutX="17.0" layoutY="200.0" prefHeight="260.0" prefWidth="340.0" />
+      <TableView fx:id="ticketsTableView" layoutX="492.0" layoutY="230.0" prefHeight="200.0" prefWidth="200.0">
+        <columns>
+          <TableColumn prefWidth="75.0" text="C1" />
+          <TableColumn prefWidth="75.0" text="C2" />
+        </columns>
+      </TableView>
+      <Label fx:id="label" layoutX="17.0" layoutY="508.0" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.zboruri.controllers.ClientPageController">
+   <children>
+      <Label layoutX="128.0" layoutY="36.0" text="Tickets Bought" />
+      <TableView fx:id="ticketsTableView" layoutX="37.0" layoutY="60.0" prefHeight="200.0" prefWidth="260.0">
+        <columns>
+           <TableColumn fx:id="usernameColumn" prefWidth="65.0" text="Username" />
+           <TableColumn fx:id="flightIdColumn" prefWidth="55.0" text="Flight ID" />
+           <TableColumn fx:id="purchaseTimeColumn" prefWidth="140.0" text="purchaseTime" />
+        </columns>
+      </TableView>
+      <TableView fx:id="flightsTableView" layoutX="328.0" layoutY="60.0" prefHeight="200.0" prefWidth="450.0">
+        <columns>
+          <TableColumn fx:id="fromColumn" prefWidth="60.0" text="from" />
+          <TableColumn fx:id="toColumn" prefWidth="60.0" text="to" />
+          <TableColumn fx:id="depTimeColumn" prefWidth="115.0" text="departure time" />
+          <TableColumn fx:id="landTimeColumn" prefWidth="115.0" text="landing time" />
+          <TableColumn fx:id="seatsColumn" prefWidth="35.0" text="seats" />
+          <TableColumn fx:id="freeSeatsColumn" prefWidth="65.0" text="free seats" />
+        </columns>
+      </TableView>
+      <Label layoutX="487.0" layoutY="36.0" text="Flights" />
+      <ComboBox fx:id="fromCB" layoutX="330.0" layoutY="301.0" prefWidth="150.0" />
+      <ComboBox fx:id="toCB" layoutX="607.0" layoutY="301.0" prefWidth="150.0" />
+      <DatePicker fx:id="datePicker" layoutX="457.0" layoutY="365.0" />
+      <Label layoutX="391.0" layoutY="275.0" text="From" />
+      <Label layoutX="671.0" layoutY="275.0" text="To" />
+      <Label layoutX="531.0" layoutY="340.0" text="Date" />
+      <Button layoutX="328.0" layoutY="421.0" mnemonicParsing="false" onAction="#handleBuy" text="Buy">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.faptebune.controllers.PersonPageController">
+   <children>
+      <TabPane prefHeight="600.0" prefWidth="800.0" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+          <Tab text="Doresc sa ajut!">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="580.0" prefWidth="800.0">
+                     <children>
+                        <TableView fx:id="needsTV" layoutX="134.0" layoutY="60.0" prefHeight="270.0" prefWidth="530.0">
+                          <columns>
+                            <TableColumn fx:id="titleColumn" prefWidth="125.0" text="Title" />
+                            <TableColumn fx:id="descriptionColumn" prefWidth="135.0" text="Description" />
+                            <TableColumn fx:id="deadlineColumn" prefWidth="110.0" text="Deadline" />
+                            <TableColumn fx:id="personInNeedIdColumn" prefWidth="95.0" text="Person in Need" />
+                            <TableColumn fx:id="statusColumn" prefWidth="65.0" text="Status" />
+                          </columns>
+                        </TableView>
+                        <Label layoutX="341.0" layoutY="24.0" text="The needs of your city" />
+                        <Button layoutX="14.0" layoutY="183.0" mnemonicParsing="false" onAction="#handleSolve" text="Solve the Need" />
+                     </children></AnchorPane>
+            </content>
+          </Tab>
+          <Tab text="Doresc sa fiu ajutat!">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="580.0" prefWidth="800.0" />
+            </content>
+          </Tab>
+        </tabs>
+      </TabPane>
+   </children>
+</AnchorPane>

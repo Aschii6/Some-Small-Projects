@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.faptebune.controllers.StartController">
+   <children>
+      <ListView fx:id="personsLV" layoutX="352.0" layoutY="47.0" prefHeight="330.0" prefWidth="200.0" />
+      <Label layoutX="380.0" layoutY="14.0" text="Users with existing account" />
+      <TextField fx:id="lastNameTF" layoutX="48.0" layoutY="47.0" promptText="Last Name" />
+      <TextField fx:id="firstNameTF" layoutX="48.0" layoutY="80.0" promptText="First Name" />
+      <TextField fx:id="usernameTF" layoutX="48.0" layoutY="114.0" promptText="Username" />
+      <TextField fx:id="passwordTF" layoutX="48.0" layoutY="149.0" promptText="Password" />
+      <TextField fx:id="streetTF" layoutX="50.0" layoutY="226.0" promptText="Street" />
+      <TextField fx:id="streetNoTF" layoutX="50.0" layoutY="262.0" promptText="Street Number" />
+      <TextField fx:id="phoneNoTF" layoutX="49.0" layoutY="302.0" promptText="Phone Number" />
+      <Button layoutX="93.0" layoutY="351.0" mnemonicParsing="false" onAction="#handleRegister" text="Register" />
+      <ComboBox fx:id="cityCB" layoutX="48.0" layoutY="188.0" prefWidth="150.0" promptText="City" />
+   </children>
+</AnchorPane>
